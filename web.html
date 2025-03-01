@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+        .apology-message {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .button {
+            background-color: #ff6347;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff4500;
+        }
+        .music-player {
+            margin: 30px 0;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #888;
+        }
+        /* Animation for floating hearts */
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .heart {
+            position: absolute;
+            font-size: 50px;
+            color: #ff6347;
+            animation: floatHeart 3s ease-in-out infinite;
+        }
+        .heart:nth-child(odd) {
+            animation-duration: 3.5s;
+        }
+        .heart:nth-child(even) {
+            animation-duration: 4s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Heart Animations -->
+    <div class="heart" style="top: 10%; left: 5%;">❤️</div>
+    <div class="heart" style="top: 30%; left: 20%;">❤️</div>
+    <div class="heart" style="top: 50%; left: 70%;">❤️</div>
+    <div class="heart" style="top: 70%; left: 40%;">❤️</div>
+    <div class="heart" style="top: 20%; left: 80%;">❤️</div>
+
+    <div class="container">
+        <h1>Sorry na</h1>
+        <p>Hey [Ai],</p>
+        <div class="apology-message">
+            <p>Sorry na sa nagawa ko. hindi ko intensyon na mapagalit o mapaalala ka.</p>
+            <p>Naiintindihan ko na kung bakit ka nag-react ng ganun, at dapat mas naging considerate ako sa feelings mo.</p>
+            <p>Let's fix this naa, ayokong magkaroon tayo ng misunderstanding. mas magiging maingat na 'ko. pasensya na ulit sorry na 'wag kana magalit sakin.</p>
+        </div>
+        <a href="mailto:yourgirlfriendemail@example.com" class="button">Let's Fix this</a>
+        
+        <div class="music-player">
+            <h2>Here’s a song just for you!</h2>
+            <audio controls autoplay>
+                <source src="https://bucket.cdnframe.com/youtube-cdn-641c0024/O25nxiYuYbU/320.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ocluVRWp7XwlXqW7CBxz%2F20250301%2Fnl-east-host02%2Fs3%2Faws4_request&X-Amz-Date=20250301T081909Z&X-Amz-Expires=600&X-Amz-Signature=02c006a31b48b29e84a602bee39de9cb2296a73edcc9b7f36547ccec5db61ebf&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Silent%20Sanctuary%20-%20Bumalik%20Ka%20Na%20Sa%27kin%20%28Lyrics%29.mp3%22&x-amz-checksum-mode=ENABLED&x-id=GetObject" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <footer>
+        <p>From, Your future IT.</p>
+    </footer>
+</body>
+</html>
